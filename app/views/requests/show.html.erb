@@ -1,6 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= link_to 'Send Email to Customer', request_email_form_path(@request) %>
+</p>
+
+<p>
+  <strong>Email of customer:</strong>
+  <%= @request.email %>
+</p>
+
+
+<p>
   <strong>Picture to describe style:</strong>
   <%= @request.picture_to_describe_style %>
 </p>

@@ -1,4 +1,4 @@
-<%= form_for :email, as: :post, url: email_send_email_path do |f| %>
+<%= form_for :email, as: :post, url: request_email_send_email_path(params[:request_id]) do |f| %>
     <p>
     Email Body: <%= f.text_area :content, cols: 20, rows: 20 %>
     </p>

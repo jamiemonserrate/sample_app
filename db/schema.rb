@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141101095600) do
+ActiveRecord::Schema.define(version: 20141101103238) do
 
   create_table "high_scores", force: true do |t|
     t.string   "game"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20141101095600) do
     t.datetime "updated_at"
     t.string   "image"
     t.integer  "state"
+    t.string   "email"
   end
 
 end

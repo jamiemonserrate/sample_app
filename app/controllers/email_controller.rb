@@ -5,7 +5,9 @@ class EmailController < ApplicationController
   end
 
   def send_email
-    RequestMailer.welcome_email('jamiemonserrate@gmail.com', params[:email][:content]).deliver
+    Rails.logger.error "*"*100
+    Rails.logger.error Request.find(params[:request_id]).email
+    RequestMailer.welcome_email(Request.find(params[:request_id]).email, params[:email][:content]).deliver
     render nothing: true
   end
 end

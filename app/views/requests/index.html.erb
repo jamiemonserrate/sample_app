@@ -24,6 +24,7 @@
   <tbody>
     <% @requests.each do |request| %>
       <tr>
+        <td><%= request.email %></td>
         <td><%= request.picture_to_describe_style %></td>
         <td><%= request.text_to_describe_style %></td>
         <td><%= request.like_colors_materials_fabrics %></td>
