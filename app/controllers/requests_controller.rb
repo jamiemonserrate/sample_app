@@ -54,6 +54,6 @@ class RequestsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def request_params
-      params.require(:request).permit(:picture_to_describe_style, :text_to_describe_style, :like_colors_materials_fabrics, :dislike_colors_materials_fabrics, :furniture, :occupants_of_house, :cannot_be_missed, :hate_at_other_appartments, :budget, :furniture_needed_by, :additional_information)
+      params.require(:request).permit(:picture_to_describe_style, :text_to_describe_style, :like_colors_materials_fabrics, :dislike_colors_materials_fabrics, :furniture, :occupants_of_house, :cannot_be_missed, :hate_at_other_appartments, :budget, :furniture_needed_by, :additional_information, :state)
     end
 end

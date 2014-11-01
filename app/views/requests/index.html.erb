@@ -14,6 +14,7 @@
       <th>Budget</th>
       <th>Furniture needed by</th>
       <th>Additional information</th>
+      <th>State</th>
       <th></th>
       <th></th>
       <th></th>
@@ -34,6 +35,7 @@
         <td><%= request.budget %></td>
         <td><%= request.furniture_needed_by %></td>
         <td><%= request.additional_information %></td>
+        <td><%= request.human_state_name %></td>
         <td><%= link_to 'Show', request %></td>
         <td><%= link_to 'Edit', edit_request_path(request) %></td>
         <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>

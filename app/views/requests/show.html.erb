@@ -56,6 +56,11 @@
 </p>
 
 <p>
+  <strong>State:</strong>
+  <%= @request.human_state_name %>
+</p>
+
+<p>
   <strong>Room Picture:</strong>
   <%= image_tag @request.image_url if @request.image? %>
 </p>
