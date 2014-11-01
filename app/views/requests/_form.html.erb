@@ -17,7 +17,14 @@
   </div>
   <div class="field">
     <%= f.label :picture_to_describe_style %><br>
-    <%= f.text_field :picture_to_describe_style %>
+    <%= f.radio_button :picture_to_describe_style, 'option 1' %>
+    <%= image_tag '/images/a.gif'%>
+    <%= f.radio_button :picture_to_describe_style, 'option 2' %>
+    <%= image_tag '/images/b.gif'%>
+    <%= f.radio_button :picture_to_describe_style, 'option 3' %>
+    <%= image_tag '/images/c.gif'%>
+    <%= f.radio_button :picture_to_describe_style, 'option 4' %>
+    <%= image_tag '/images/d.gif'%>
   </div>
   <div class="field">
     <%= f.label :text_to_describe_style %><br>
