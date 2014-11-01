@@ -24,7 +24,7 @@ class RequestsController < ApplicationController
     @request = Request.new(request_params)
 
     if @request.save
-      redirect_to @request, notice: 'Request was successfully created.'
+      redirect_to root_path
     else
       render action: 'new'
     end

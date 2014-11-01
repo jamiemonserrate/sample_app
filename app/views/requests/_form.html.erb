@@ -65,6 +65,7 @@
   </div>
   <div class="field">
     <%= f.label :image %><br>
+    <%= image_tag @request.image_url if @request.image? %>
     <%= f.file_field :image %>
   </div>
   <div class="actions">
