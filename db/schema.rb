@@ -11,6 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20141101091953) do
+
+  create_table "high_scores", force: true do |t|
+    t.string   "game"
+    t.integer  "score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "requests", force: true do |t|
+    t.string   "picture_to_describe_style"
+    t.text     "text_to_describe_style"
+    t.text     "like_colors_materials_fabrics"
+    t.text     "dislike_colors_materials_fabrics"
+    t.text     "furniture"
+    t.text     "occupants_of_house"
+    t.text     "cannot_be_missed"
+    t.text     "hate_at_other_appartments"
+    t.integer  "budget"
+    t.date     "furniture_needed_by"
+    t.text     "additional_information"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

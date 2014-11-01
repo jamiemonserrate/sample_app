@@ -1,0 +1,61 @@
+<%= form_for(@request) do |f| %>
+  <% if @request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@request.errors.count, "error") %> prohibited this request from being saved:</h2>
+
+      <ul>
+      <% @request.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :picture_to_describe_style %><br>
+    <%= f.text_field :picture_to_describe_style %>
+  </div>
+  <div class="field">
+    <%= f.label :text_to_describe_style %><br>
+    <%= f.text_area :text_to_describe_style %>
+  </div>
+  <div class="field">
+    <%= f.label :like_colors_materials_fabrics %><br>
+    <%= f.text_area :like_colors_materials_fabrics %>
+  </div>
+  <div class="field">
+    <%= f.label :dislike_colors_materials_fabrics %><br>
+    <%= f.text_area :dislike_colors_materials_fabrics %>
+  </div>
+  <div class="field">
+    <%= f.label :furniture %><br>
+    <%= f.text_area :furniture %>
+  </div>
+  <div class="field">
+    <%= f.label :occupants_of_house %><br>
+    <%= f.text_area :occupants_of_house %>
+  </div>
+  <div class="field">
+    <%= f.label :cannot_be_missed %><br>
+    <%= f.text_area :cannot_be_missed %>
+  </div>
+  <div class="field">
+    <%= f.label :hate_at_other_appartments %><br>
+    <%= f.text_area :hate_at_other_appartments %>
+  </div>
+  <div class="field">
+    <%= f.label :budget %><br>
+    <%= f.number_field :budget %>
+  </div>
+  <div class="field">
+    <%= f.label :furniture_needed_by %><br>
+    <%= f.date_select :furniture_needed_by %>
+  </div>
+  <div class="field">
+    <%= f.label :additional_information %><br>
+    <%= f.text_area :additional_information %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

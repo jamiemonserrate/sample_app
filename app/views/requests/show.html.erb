@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Picture to describe style:</strong>
+  <%= @request.picture_to_describe_style %>
+</p>
+
+<p>
+  <strong>Text to describe style:</strong>
+  <%= @request.text_to_describe_style %>
+</p>
+
+<p>
+  <strong>Like colors materials fabrics:</strong>
+  <%= @request.like_colors_materials_fabrics %>
+</p>
+
+<p>
+  <strong>Dislike colors materials fabrics:</strong>
+  <%= @request.dislike_colors_materials_fabrics %>
+</p>
+
+<p>
+  <strong>Furniture:</strong>
+  <%= @request.furniture %>
+</p>
+
+<p>
+  <strong>Occupants of house:</strong>
+  <%= @request.occupants_of_house %>
+</p>
+
+<p>
+  <strong>Cannot be missed:</strong>
+  <%= @request.cannot_be_missed %>
+</p>
+
+<p>
+  <strong>Hate at other appartments:</strong>
+  <%= @request.hate_at_other_appartments %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @request.budget %>
+</p>
+
+<p>
+  <strong>Furniture needed by:</strong>
+  <%= @request.furniture_needed_by %>
+</p>
+
+<p>
+  <strong>Additional information:</strong>
+  <%= @request.additional_information %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>
