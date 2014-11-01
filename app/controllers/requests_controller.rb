@@ -32,6 +32,7 @@ class RequestsController < ApplicationController
 
   # PATCH/PUT /requests/1
   def update
+    @request.image = params[:request][:image]
     if @request.update(request_params)
       redirect_to @request, notice: 'Request was successfully updated.'
     else

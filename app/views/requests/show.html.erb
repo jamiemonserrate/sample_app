@@ -55,5 +55,10 @@
   <%= @request.additional_information %>
 </p>
 
+<p>
+  <strong>Room Picture:</strong>
+  <%= image_tag @request.image_url if @request.image? %>
+</p>
+
 <%= link_to 'Edit', edit_request_path(@request) %> |
 <%= link_to 'Back', requests_path %>
