@@ -1,0 +1,6 @@
+<%= form_for :email, as: :post, url: email_send_email_path do |f| %>
+    <p>
+    Email Body: <%= f.text_area :content, cols: 20, rows: 20 %>
+    </p>
+    <%= f.submit 'Send Email' %>
+<% end %>

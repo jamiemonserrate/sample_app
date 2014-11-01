@@ -1,6 +1,9 @@
 SampleApp::Application.routes.draw do
   resources :requests
 
+  get 'email/form' => 'email#form'
+  post 'email/send_email' => 'email#send_email'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
